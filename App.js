@@ -4,16 +4,29 @@ import React from 'react';
 import {
   StyleSheet,
   View,
-  Text
-
+  Text,
+  TextInput,
 } from 'react-native';
 
 
-export default class App {
-  render() {
+export default function App() {
     return (
-      <h1>This is the Test Deployment App</h1>
-    )
+      <View style={styles.container}>
+        <Text>This is the Test Deployment App</Text>
+        <TextInput value="Ann Adaya" />
+
+      </View>
+
+    );
   }
-}
   
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
+    
+  }
+});
+
