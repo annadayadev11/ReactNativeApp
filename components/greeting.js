@@ -22,7 +22,8 @@ export default class Greeting extends Component {
 
           <TextInput
             style={{ height: 30, borderColor: 'gray', borderWidth: 1 }}
-            placeholder="Enteryour name ... "
+      
+            placeholder="Enter your name... "
             onChangeText={(name) => this.setState({ name })} />
           />
           <Text style={{ marginTop: 10 }}>Welcome to the React Native course, {this.state.name}! </Text>
