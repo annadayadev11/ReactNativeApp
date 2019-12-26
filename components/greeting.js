@@ -18,17 +18,15 @@ export default class Greeting extends Component {
 
   render() {
     return (
-      <>
         <View style={styles.container}>
 
           <TextInput
             style={{ height: 30, borderColor: 'gray', borderWidth: 1 }}
-            placeholder="Write your name... "
+            placeholder="Enteryour name ... "
             onChangeText={(name) => this.setState({ name })} />
           />
-          <Text style={{ marginTop: 10 }}>Welcome to this course, {this.state.name}! </Text>
+          <Text style={{ marginTop: 10 }}>Welcome to the React Native course, {this.state.name}! </Text>
         </View>
-      </>
     );
   }
 
